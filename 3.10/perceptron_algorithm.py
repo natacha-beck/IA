@@ -32,9 +32,7 @@ def prediction(X, W, b):
 #   b: the bias
 def perceptronStep(X, y, W, b, learn_rate = 0.01):
     for i in range(len(X)):
-        point = X[i]
-        y_hat = y[i]
-
+        y_hat           = y[i]
         predicted_y_hat = prediction(X[i],W,b)
 
         if y_hat-predicted_y_hat == 1:
